@@ -13,7 +13,7 @@ import Customers from "./pages/Customers";
 import Products from "./pages/Products";
 import Orders from "./pages/Orders";
 
-import Sidebar from "./components/sidebar";
+import Sidebar from "./components/Sidebar";
 import Topbar from "./components/topbar";
 // import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
