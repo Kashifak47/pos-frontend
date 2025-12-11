@@ -14,7 +14,7 @@ import Products from "./pages/Products";
 import Orders from "./pages/Orders";
 
 import Sidebar from "./components/Sidebar";
-import Topbar from "./components/topbar";
+import Topbar from "./components/Topbar";
 // import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import PaymentPage from "./pages/PaymentPage";
