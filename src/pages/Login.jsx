@@ -200,10 +200,20 @@ const Login = () => {
   return (
     <div className="min-h-screen flex items-center justify-center bg-slate-50 px-4 relative">
 
-      {/* 🔥 FULL SCREEN LOADER OVERLAY */}
+      {/* 🔥 PREMIUM FULL SCREEN LOADER */}
       {loading && (
-        <div className="fixed inset-0 bg-black/40 flex items-center justify-center z-50">
-          <div className="w-12 h-12 border-4 border-white border-t-transparent rounded-full animate-spin"></div>
+        <div className="fixed inset-0 bg-black/40 flex items-center justify-center z-50 backdrop-blur-sm">
+
+          <div className="relative">
+            {/* Outer spinning glow ring */}
+            <div className="w-20 h-20 border-4 border-indigo-500/30 border-t-indigo-600 rounded-full animate-spin"></div>
+
+            {/* Inner pulsing circle */}
+            <div className="absolute inset-0 flex items-center justify-center">
+              <div className="w-8 h-8 bg-indigo-600 rounded-full animate-ping"></div>
+            </div>
+          </div>
+
         </div>
       )}
 
@@ -259,6 +269,7 @@ const Login = () => {
 };
 
 export default Login;
+
 
 
 
