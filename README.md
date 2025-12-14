@@ -1,16 +1,69 @@
-# React + Vite
+# POS Billing System (Full Stack)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A full-stack **Point of Sale (POS) Billing System** built with **React (Vite)** and **Spring Boot**.  
+This application provides product management, billing, inventory control, authentication, and secure online payments using **Razorpay**.
 
-Currently, two official plugins are available:
+The project is designed to simulate a **real-world retail POS system** and is production-ready.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## Live Demo
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Full Stack POS System : https://pos-by-kashif.vercel.app  
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Features
+
+### Authentication
+- User registration and login
+- JWT-based authentication
+- Role-based access control
+
+### POS & Billing
+- Add products to cart
+- Quantity and price calculation
+- Order creation and billing workflow
+
+### Inventory Management
+- Product CRUD operations
+- Stock management
+- Prevents billing when stock is insufficient
+
+### Online Payments
+- Razorpay integration
+- Payment order creation on backend
+- Secure payment verification
+- No secret keys exposed on frontend
+
+### Production Ready
+- Environment-based configuration
+- CORS configured for local and production
+- Backend uptime monitoring
+- SPA routing support on deployment
+
+---
+
+## Tech Stack
+
+### Frontend
+- React (Vite)
+- Tailwind CSS
+- Axios
+- React Router
+
+### Backend
+- Spring Boot
+- Spring Security
+- Basic Auth
+- Hibernate / JPA
+
+### Database
+- MySQL (Clever Cloud)
+
+### Deployment
+- Frontend: Vercel
+- Backend: Render
+- Database: Clever Cloud
+- Uptime Monitoring: UptimeRobot
+
