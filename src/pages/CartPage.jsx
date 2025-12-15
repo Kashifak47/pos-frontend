@@ -202,7 +202,7 @@ const CartPage = () => {
               <div className="flex items-center gap-4 flex-1">
                 <img
                   src={
-                    item.image ||
+                    item.imageUrl ||
                     "https://via.placeholder.com/60?text=🍔"
                   }
                   alt={item.name}
