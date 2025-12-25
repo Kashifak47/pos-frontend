@@ -200,12 +200,12 @@ const Register = () => {
     }
 
     if (!/^[6-9]\d{9}$/.test(phone)) {
-      toast.error("Please Enter Correct Phone Number");
+      toast.error("Please Enter 10 digits Phone Number");
       return;
     }
 
     if (/(.)\1{6,}/.test(phone)) {
-      toast.error("Phone number cannot contain repeating digits");
+      toast.error("Please Enter Valid Phone Number");
       return;
     }
 
