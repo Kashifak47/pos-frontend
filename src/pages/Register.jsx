@@ -199,6 +199,18 @@ const Register = () => {
       return;
     }
 
+    if (!/^[6-9]\d{9}$/.test(phone)) {
+      toast.error("Please Enter Correct Phone Number");
+      return;
+    }
+
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
+
+    if (!emailRegex.test(email)) {
+      toast.error("Please enter a valid email address!");
+      return;
+    }
+
     try {
       await register(name, email, password, phone, address);
       toast.success("Registered successfully!");
@@ -240,7 +252,11 @@ const Register = () => {
             placeholder="Phone"
             className="pro-input"
             value={phone}
-            onChange={(e) => setPhone(e.target.value)}
+            maxLength={10}
+            onChange={(e) => {
+              const value = e.target.value.replace(/\D/g, ""); // only digits
+              setPhone(value);
+            }}
           />
 
           <input
