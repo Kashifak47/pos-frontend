@@ -10,7 +10,7 @@ The project is designed to simulate a **real-world retail POS system** and is pr
 ## Live Demo
 
 - Full Stack POS System: https://pos-by-kashif.vercel.app  
-  _(Hosted on free tier — may take a few seconds to wake up)_
+  _(Hosted on free tier — may take a few moments to wake up)_
 
 ---
 
