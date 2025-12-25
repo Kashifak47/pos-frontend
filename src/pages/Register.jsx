@@ -204,6 +204,11 @@ const Register = () => {
       return;
     }
 
+    if (/(.)\1{6,}/.test(phone)) {
+      toast.error("Phone number cannot contain repeating digits");
+      return;
+    }
+
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
 
     if (!emailRegex.test(email)) {
